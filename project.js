@@ -19,7 +19,13 @@
  * sumOdds([3, 7, 8, 15, 2, 1, 13]) -> 39
  */
 function sumOdds(numbers) {
-  // Your code here
+  const odd = [];
+    for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] %2===1 ){
+      odd.push (numbers[i]);
+}
+}
+return odd;
 }
 
 /**
@@ -35,8 +41,18 @@ function sumOdds(numbers) {
  * Hint: Use string methods to make it case-insensitive
  */
 function characterCount(string, c) {
-  // Your code here
-}
+
+    let count = 0;
+
+    for (let i = 0; i < string.length; i++){
+   
+    
+      if (string[i] === c)
+      count++;
+    }
+    return count;
+ 
+  }
 
 /**
  * differences(numbers):
@@ -55,6 +71,7 @@ function characterCount(string, c) {
  */
 function differences(numbers) {
   // Your code here
+  
 }
 
 /**
@@ -104,7 +121,6 @@ function afterX(numbers, x) {
  * Hint: Use string method .toUpperCase()
  */
 function abbreviate(firstName, lastName) {
-  // Your code here
 }
 
 /**
@@ -118,9 +134,12 @@ function abbreviate(firstName, lastName) {
  *
  */
 function isUpperCase(string) {
-  // Your code here
-}
+let ch = "";
+if ( chsl === isUpperCase) 
+return true;
+else return false;
 
+}
 /**
  * elementInArray(numbers, x):
  * - receives an array of numbers, and a number `x`.
@@ -146,8 +165,15 @@ function elementInArray(numbers, x) {
  *
  */
 function reverseString(string) {
-  // Your code here
 }
+  // Your code here
+  //let reve = "";
+  //for (let character of string){
+    //reve = character + reve;
+  //}
+ 
+  //return reve;
+  //}
 
 // console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
 // console.log(characterCount("Character Count is clever", "c"));
